@@ -1,4 +1,7 @@
 #安装docker
+sudo apt-get update			--同步源索引
+sudo apt-get install -y docker.io
+sudo ln -sf /usr/bin/docker.io /usr/local/bin/docker
 #将镜像pull到本地
 sudo docker pull b.gcr.io/tensorflow/tensorflow
 #如果无法pull，可以翻墙下载镜像，打成tensorflow.tat
